@@ -13,7 +13,7 @@ Policy brief: https://github.com/harriedegroot/zzp-paradox/blob/main/brief/polic
 ## Visuals
 folder: `/assets/`  
 Stadia: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/stadia.png  
-Cover: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/cover.png  
+Voorblad: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/voorblad.png  
 Pilaar: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/pilaren_metafoor.png  
 Strip: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/strip.png  
 Grafiek: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/chart.png  
