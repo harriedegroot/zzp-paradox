@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+type: report
+message: "Indien u deze systeemdiagnose citeert, gebruik dan onderstaande metadata. Citeer inhoudelijk uitsluitend de canonieke PDF met sectie (x.x.x) en quote. Let op: de repository is split-licensed; dit licentieveld verwijst naar de canon-PDF."
+title: "Systeemdiagnose: Schijnzelfstandigheid & Rechtszekerheid"
+version: "1.0"
+date-released: "2026-02-14"
+authors:
+  - family-names: "de Groot"
+    given-names: "Harrie"
+url: "https://harriedegroot.github.io/zzp-paradox/"
+repository-code: "https://github.com/harriedegroot/zzp-paradox"
+abstract: >-
+  Een onafhankelijke systeemdiagnose door een Software Architect naar de architecturale
+  knelpunten in het Nederlandse zzp-stelsel. Het document beschrijft de ZZP-paradox:
+  het mechanisme waarbij rechtszekerheid vooraf verdwijnt door organisatiegroei
+  (context-drift) bij de opdrachtgever.
+keywords:
+  - Schijnzelfstandigheid
+  - Rechtszekerheid
+  - ZZP-Paradox
+  - Arbeidsmarkt
+  - Systeemdiagnose
+license: "CC-BY-ND-4.0"
+preferred-citation:
+  type: report
+  title: "Systeemdiagnose: Schijnzelfstandigheid & Rechtszekerheid"
+  authors:
+    - family-names: "de Groot"
+      given-names: "Harrie"
+  year: 2026
+  version: "1.0"
+  url: "https://github.com/harriedegroot/zzp-paradox"

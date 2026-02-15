@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+desktop.ini
+
+# Editor & IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# temp & backups
+*.bak
+*.tmp
+*.old
+*~
+
+# artifiacts
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# environment
+.env
+.env.local

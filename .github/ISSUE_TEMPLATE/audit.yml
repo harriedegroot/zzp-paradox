@@ -1,0 +1,70 @@
+name: "Inhoudelijke Toetsing & Audit"
+description: "Gebruik dit formulier voor errata, counterarguments of vragen (bronanker verplicht)."
+title: "[AUDIT]: "
+labels: ["audit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### ⚖️ Audit-protocol
+        Inhoudelijke toetsing is alleen mogelijk met een **bronanker** uit de canonieke PDF.
+
+        **Let op:** NotebookLM/LLM-output is geen bron zonder **sectie (x.x.x) + quote** uit de canon-PDF.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Type melding"
+      options:
+        - "Erratum (feitelijk/tekstueel)"
+        - "Counterargument (mechanisme/toetsvraag)"
+        - "Vraag (verduidelijking)"
+        - "Misquote / misframing (externe weergave)"
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: "Sectie in canon-PDF (x.x.x)"
+      description: "Verwijs naar de specifieke paragraaf in de whitepaper."
+      placeholder: "bijv. 2.3.1"
+    validations:
+      required: true
+
+  - type: textarea
+    id: quote
+    attributes:
+      label: "Quote uit de canon-PDF"
+      description: "Kopieer de exacte tekst waar u naar verwijst. Citeer geen samenvattingen."
+      placeholder: "Plak hier de exacte quote uit de PDF..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: toelichting
+    attributes:
+      label: "Toelichting (max 10 regels)"
+      description: "Beschrijf de fout, het tegenmechanisme of de vraag. Houd het kort en concreet."
+      placeholder: "Wat wordt er betwist of gevraagd?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: "Verwacht effect"
+      options:
+        - "Wijzigt kernclaim (major)"
+        - "Correctie/Verduidelijking (minor)"
+        - "Vraag (geen claim-wijziging)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Onderbouwing (optioneel)"
+      description: "Link, bron, of reproduceerbare onderbouwing."
+    validations:
+      required: false

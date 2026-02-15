@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Systeemdiagnose: Schijnzelfstandigheid & Rechtszekerheid</title>
+    <style>
+      :root {
+        --deep-blue: #003366;
+        --action-blue: #004a99;
+        --text-color: #222;
+        --meta-color: #666;
+        --border-color: #ccc;
+        --ai-bg: #f2f7fb;
+        --disclaimer-red: #d32f2f;
+      }
+
+      body {
+        font-family: "Georgia", serif;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: var(--text-color);
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        background-color: #fff;
+      }
+
+      /* --- Header --- */
+      header {
+        border-bottom: 2px solid var(--deep-blue);
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        color: var(--deep-blue);
+        margin-bottom: 10px;
+        line-height: 1.1;
+        font-weight: normal;
+      }
+      .metadata {
+        font-family: sans-serif;
+        font-size: 0.95rem;
+        color: var(--meta-color);
+        line-height: 1.5;
+      }
+
+      /* --- Abstract --- */
+      .abstract-box {
+        font-size: 1.4rem;
+        margin: 60px 0 60px 0;
+        padding: 0 0 0 50px;
+        color: #111;
+        font-style: italic;
+        text-align: left;
+        position: relative;
+        max-width: 780px;
+      }
+      .abstract-box::before {
+        content: "“";
+        position: absolute;
+        left: -15px;
+        top: -60px;
+        font-size: 6rem;
+        color: #eee;
+        font-family: serif;
+      }
+
+      /* --- Kernpublicatie --- */
+      .pub-section {
+        border: 1px solid var(--border-color);
+        margin: 40px 0 0 0;
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        background: #fff;
+      }
+      .pub-thumbnail {
+        padding: 30px;
+        background: #fdfdfd;
+        border-right: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .pub-thumbnail img {
+        width: 100%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+        cursor: pointer;
+      }
+      .pub-content {
+        padding: 35px;
+      }
+      .pub-content h3 {
+        margin-top: 0;
+        color: var(--deep-blue);
+        font-family: sans-serif;
+        font-size: 1.4rem;
+        font-weight: normal;
+      }
+      .pub-content p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        color: #444;
+      }
+
+      /* Knoppen Layout */
+      .btn-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .btn-group {
+        display: flex;
+        gap: 10px;
+      }
+      .btn-group .btn {
+        flex: 1;
+      }
+
+      .btn {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 3px;
+        text-align: center;
+        transition: all 0.2s;
+      }
+      .btn-main {
+        background-color: var(--deep-blue);
+        color: white;
+      }
+      .btn-main:hover {
+        background-color: var(--action-blue);
+      }
+      .btn-sub {
+        background-color: white;
+        color: var(--deep-blue);
+        border: 1px solid var(--deep-blue);
+      }
+      .btn-sub:hover {
+        background-color: #f4f8fb;
+      }
+
+      /* --- AI Navigatie --- */
+      .ai-nav-section {
+        background-color: var(--ai-bg);
+        border: 1px solid #d1dee7;
+        border-top: none;
+        padding: 40px;
+        margin-bottom: 60px;
+      }
+      .ai-nav-title {
+        margin-top: 0;
+        font-family: sans-serif;
+        font-weight: normal;
+      }
+      .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px 0 30px 0;
+      }
+      .tag {
+        text-decoration: none;
+        background: #fff;
+        border: 1px solid #c8d5df;
+        padding: 10px 18px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        color: #333;
+        transition: 0.2s;
+      }
+      .tag:hover {
+        border-color: var(--deep-blue);
+      }
+      .tag span {
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+
+      .ai-cta-box {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--deep-blue);
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.15rem;
+      }
+      .icon-arrow {
+        width: 36px;
+        height: 36px;
+        background-color: var(--deep-blue);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        transition: transform 0.2s;
+      }
+      .ai-cta-box:hover .icon-arrow {
+        transform: translateX(5px);
+      }
+      .ai-disclaimer {
+        font-size: 0.85rem;
+        margin-top: 25px;
+        font-style: italic;
+        color: #666;
+        font-family: sans-serif;
+      }
+
+      /* --- Toetsing & Synthese --- */
+      .conclusion-box,
+      .audit-box {
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        padding: 40px 60px;
+        margin: 80px 0;
+        font-family: sans-serif;
+        font-size: 1.15rem;
+        line-height: 1.6;
+      }
+      .conclusion-box {
+        background-color: var(--ai-bg);
+        border-left: 6px solid var(--deep-blue);
+        color: #111;
+      }
+      .audit-box {
+        background-color: #fcfcfc;
+        color: var(--deep-blue);
+      }
+
+      .box-label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: var(--meta-color);
+      }
+
+      .main-conclusion {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: normal;
+        color: var(--deep-blue);
+        line-height: 1.3;
+        margin-bottom: 25px;
+      }
+
+      .metafoor-quote {
+        font-style: italic;
+        color: #555;
+        display: block;
+        margin: 20px 0;
+        padding-left: 20px;
+        border-left: 2px solid #ddd;
+      }
+
+      .audit-item {
+        margin-bottom: 30px;
+      }
+      .audit-item:last-child {
+        margin-bottom: 0;
+      }
+      .audit-label {
+        font-weight: bold;
+        display: block;
+        color: var(--deep-blue);
+        margin-bottom: 8px;
+      }
+
+      /* --- Visuals --- */
+      h2 {
+        font-size: 1.8rem;
+        color: var(--deep-blue);
+        margin-top: 100px;
+        font-weight: normal;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+      }
+      .visual-box {
+        margin: 40px 0 80px 0;
+        text-align: center;
+      }
+      .visual-box img {
+        max-width: 100%;
+        cursor: zoom-in;
+      }
+
+      /* --- Disclaimer & Falsificatie --- */
+      .disclaimer-box {
+        border: 1px solid var(--disclaimer-red);
+        padding: 30px;
+        background-color: #fffafa;
+        border-left: 8px solid var(--disclaimer-red);
+        margin: 60px 0;
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+      .falsification-box {
+        background: #f9f9f9;
+        padding: 35px;
+        border: 1px solid #eee;
+        margin-top: 60px;
+        font-family: sans-serif;
+        font-size: 1rem;
+      }
+      .falsification-box h4 {
+        margin-top: 0;
+        color: var(--deep-blue);
+        font-weight: normal;
+      }
+      .falsification-box a {
+        color: var(--deep-blue);
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
+      }
+      .falsification-box a:hover {
+        border-color: var(--deep-blue);
+      }
+
+      footer {
+        margin-top: 100px;
+        padding: 60px 0;
+        border-top: 1px solid var(--border-color);
+        color: var(--meta-color);
+        font-family: sans-serif;
+        font-size: 0.85rem;
+        line-height: 1.6;
+      }
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .footer-links a {
+        color: var(--deep-blue);
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* --- Lightbox --- */
+      #lightbox {
+        display: none;
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        justify-content: center;
+        align-items: center;
+        cursor: zoom-out;
+      }
+      #lightbox img {
+        max-width: 95%;
+        max-height: 95%;
+        border: 2px solid #fff;
+      }
+
+      @media (max-width: 750px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+        .pub-section {
+          grid-template-columns: 1fr;
+        }
+        .pub-thumbnail {
+          border-right: none;
+          border-bottom: 1px solid #eee;
+        }
+        .conclusion-box,
+        .audit-box {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        .btn-group {
+          flex-direction: column;
+        }
+        .footer-content {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Systeemdiagnose: Schijnzelfstandigheid & Rechtszekerheid</h1>
+      <div class="metadata">
+        <strong>Harrie de Groot (MSc)</strong> &bull; Software Architect &amp;
+        AI specialist<br />
+        Versie 1.0 &bull; Canonieke Publicatie &bull; 14 februari 2026
+      </div>
+    </header>
+
+    <section class="abstract-box">
+      Deze publicatie verklaart waarom het debat over schijnzelfstandigheid al
+      decennia vastloopt. Het maakt zichtbaar waarom nieuwe wetgevende
+      initiatieven binnen het bestaande kwalificatiekader tegen structurele
+      grenzen aanlopen.
+    </section>
+
+    <section class="pub-section">
+      <div class="pub-thumbnail">
+        <img
+          src="assets/voorblad.png"
+          alt="Voorblad Whitepaper"
+          class="zoomable"
+        />
+      </div>
+      <div class="pub-content">
+        <h3>Canonieke Systeemdiagnose</h3>
+        <p>
+          Deze editie biedt de volledige systeemdiagnose. Het document bevat de
+          integrale bewijslast achter de ZZP-Paradox en ontsluit de bronset via
+          de Evidence Map.
+        </p>
+        <div class="btn-stack">
+          <a
+            href="whitepaper/ZZP-rechtszekerheid-v1.0.pdf"
+            target="_blank"
+            class="btn btn-main"
+            >Systeemdiagnose v1.0 (PDF)</a
+          >
+          <div class="btn-group">
+            <a
+              href="brief/policy-brief-v1.0.pdf"
+              target="_blank"
+              class="btn btn-sub"
+              >Policy Brief (1p)</a
+            >
+            <a
+              href="brief/decision-memo-v1.0.pdf"
+              target="_blank"
+              class="btn btn-sub"
+              >Decision Memo (2p)</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-nav-section">
+      <h3 class="ai-nav-title">Interactieve Navigatiehulp ✨</h3>
+      <p style="font-family: sans-serif; font-size: 1rem">
+        Verken de materie via de interactieve AI omgeving:
+      </p>
+      <div class="tag-row">
+        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+          ><span>💬</span> Chat</a
+        >
+        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+          ><span>🎙️</span> Audio Briefing</a
+        >
+        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+          ><span>📊</span> Infographics</a
+        >
+        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+          ><span>🎬</span> Video-uitleg</a
+        >
+        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+          ><span>📄</span> Briefings</a
+        >
+      </div>
+      <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="ai-cta-box">
+        <div class="icon-arrow">➔</div>
+        <span>Open de interactieve leeswijzer</span>
+      </a>
+      <p class="ai-disclaimer">
+        NotebookLM is een publieke navigatiehulp; citeer en verifieer altijd in
+        de canon-PDF met sectie en quote.
+      </p>
+    </section>
+
+    <div class="disclaimer-box">
+      Dit document betreft een analytische systeemdiagnose. Het is opgesteld als
+      een onafhankelijk instrument om de voorspelbaarheid van wetgeving te
+      toetsen. Het is nadrukkelijk geen juridisch advies, geen
+      beleidsaanbeveling of politiek pamflet.
+    </div>
+
+    <h2>De ZZP-Paradox</h2>
+    <p>
+      Het centrale mechanisme van deze diagnose legt bloot dat een werkrelatie
+      juridisch kan kantelen uitsluitend door de groei en professionalisering
+      van de opdrachtgever.
+    </p>
+    <p>
+      Door de zelfstandige inzet in de analyse constant te houden, wordt
+      zichtbaar dat de juridische kwalificatie meeschuift met de
+      organisatiecontext. Rechtszekerheid vooraf is hiermee in de praktijk geen
+      eigenschap van het werk, maar van de omgeving waarin het resultaat landt.
+      De visualisatie maakt zichtbaar dat er geen vooraf kenbare drempel bestaat
+      waar zelfstandigheid omslaat naar een herkwalificatie als
+      dienstbetrekking.
+    </p>
+    <div class="visual-box">
+      <img
+        src="assets/stadia.png"
+        alt="De ZZP-Paradox Stadia"
+        class="zoomable"
+      />
+    </div>
+
+    <h2>Moderne Organisaties</h2>
+    <p>
+      Deze onzekerheid over de juridische status van zelfstandigen hangt nauw
+      samen met de architecturale complexiteit van moderne organisaties. Waar
+      een specialist in een kleine, overzichtelijke omgeving vaak duidelijk
+      autonoom kan opereren, wordt dezelfde opdracht in een complexe omgeving
+      omgeven door gelaagde governance, security en compliance.
+    </p>
+    <p>
+      Daar ontstaat de frictie: om resultaat te leveren moet de professional
+      aansluiten op de toegangs-, proces-, en kwaliteitsgates van de
+      opdrachtgever. Deze noodzakelijke integratie in de “machine” van de
+      organisatie is geen keuze voor hiërarchie, maar een randvoorwaarde om
+      überhaupt te kunnen leveren. In de praktijk wordt dit spanningsveld echter
+      geregeld verkeerd geïnterpreteerd als gezag of inbedding. Hieronder wordt
+      dat mechanisme zichtbaar gemaakt in de gelaagdheid van de pilaren.
+    </p>
+    <div class="visual-box">
+      <img
+        src="assets/pilaren_metafoor.png"
+        alt="Organisatie Architectuur"
+        class="zoomable"
+      />
+    </div>
+
+    <h2>Maatschappelijke Consequentie</h2>
+    <p>
+      Gebrek aan rechtszekerheid vooraf stuurt opdrachtgevers richting
+      risicomijdend gedrag aan de poort. Dat vertaalt zich in extra drempels,
+      verplichte schakels of uitsluiting, en verstoort zo structureel de werking
+      van de arbeidsmarkt en kenniseconomie. Het resultaat is een
+      maatschappelijk waardelek in de orde van grootte van honderden miljoenen
+      tot ruim €1 miljard per jaar.
+    </p>
+
+    <div class="conclusion-box">
+      <span class="box-label">Synthese: De Mobiliteitsparadox</span>
+      <span class="main-conclusion"
+        >“Zolang we holistisch en ex post blijven toetsen, blijft de ZZP-Paradox
+        een maatschappelijk probleem.”</span
+      >
+
+      <div class="metafoor-story">
+        Het is alsof je een verkeersboete krijgt omdat de maximumsnelheid pas
+        achteraf, holistisch en contextueel wordt vastgesteld:
+
+        <div class="metafoor-quote">
+          Twee jaar later krijgt een bestuurder een brief: “Holistische
+          beoordeling van uw rit.” Er blijkt geen vaste grens te bestaan die je
+          onderweg had kunnen zien. De handhaver oordeelt: “In deze context
+          betekende ‘verantwoord’ maximaal 70. U reed 90. Daarom: boete en
+          naheffing.”
+        </div>
+
+        De bestuurder protesteert: “Maar hoe had ik dat kunnen weten? Er stonden
+        geen borden.” Het antwoord is functioneel en koud: “De norm is open. De
+        grens bepalen we achteraf, op basis van het totaalplaatje.”
+      </div>
+    </div>
+
+    <p>
+      De onderstaande casus illustreert dit patroon in de praktijk: een
+      professional die jarenlang consistent expertise levert, kan plotseling
+      worden uitgesloten of verplicht via intermediatie moeten werken. Dit
+      gebeurt niet door een inhoudelijke verandering in het werk, maar door een
+      veranderende risicoperceptie bij de opdrachtgever.
+    </p>
+    <div class="visual-box">
+      <img
+        src="assets/strip.png"
+        alt="De Maatschappelijke Strip"
+        class="zoomable"
+      />
+    </div>
+
+    <div class="audit-box">
+      <span class="box-label">Conclusie & Toetsing</span>
+      <div class="audit-item">
+        <span class="audit-label">Centrale Toetsvraag:</span>
+        “Kunt u binnen de huidige regels vooraf het kantelpunt aanwijzen waarop
+        dezelfde opdracht juridisch omslaat naar een dienstbetrekking,
+        uitsluitend doordat de opdrachtgever groeit en strakker gaat
+        organiseren, terwijl de zelfstandige professional aantoonbaar dezelfde
+        inzet levert?”
+      </div>
+      <div class="audit-item">
+        <span class="audit-label">Aanvullende Toetsvraag:</span>
+        “Hoe kan hoogwaardige expertise in teamgebaseerde, security-gedreven
+        omgevingen worden ingezet wanneer integratie in processen een
+        uitvoeringsvoorwaarde is, zonder dat dit automatisch als 'gezag' wordt
+        gelezen?”
+      </div>
+    </div>
+
+    <div class="falsification-box">
+      <h4>Review & Falsificatie</h4>
+      <p>
+        Dit document is opgesteld als een toetsbaar model. Wilt u de kernclaim
+        weerleggen? Geef één schaalbaar, praktisch beslispunt vooraf dat in
+        complexe organisaties (Stadium 4) voorspelbaar werkt. Verwijs naar de
+        passage in de brontekst via dit
+        <a href="https://github.com/harriedegroot/zzp-paradox/form">formulier</a>.
+      </p>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          v1.0 (Canonieke Publicatie) &bull; 14 februari 2026<br />
+          Bronelementen beschikbaar via de
+          <a href="https://github.com/harriedegroot/zzp-paradox">GitHub Repository</a
+          >.
+        </div>
+        <div style="text-align: right">&copy; 2026 Harrie de Groot</div>
+      </div>
+    </footer>
+
+    <div id="lightbox"><img id="lb-img" src="" /></div>
+
+    <script>
+      const lb = document.getElementById("lightbox");
+      const lbi = document.getElementById("lb-img");
+      document.querySelectorAll(".zoomable").forEach((img) => {
+        img.onclick = () => {
+          lbi.src = img.src;
+          lb.style.display = "flex";
+        };
+      });
+      lb.onclick = () => {
+        lb.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
