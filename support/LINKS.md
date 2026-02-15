@@ -21,4 +21,4 @@ Weegschaal: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/weegsc
 
 ## Audit & Feedback
 Feedback: https://github.com/harriedegroot/zzp-paradox/issues/new?template=audit.yml  
-Checksums: https://github.com/harriedegroot/zzp-paradox/blob/main/CHECKSUMS.txt
+Checksums: https://github.com/harriedegroot/zzp-paradox/releases/download/v1.0/CHECKSUMS.txt
