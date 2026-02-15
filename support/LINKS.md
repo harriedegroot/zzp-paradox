@@ -6,19 +6,19 @@ Projectpagina: https://harriedegroot.github.io/zzp-paradox/
 NotebookLM (AI): https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9
 
 ## Documenten (canoniek)
-Canon PDF: https://github.com/harriedegroot/zzp-paradox/releases/download/v1.0/ZZP-rechtszekerheid-v1.0.pdf  
-Decision memo: https://github.com/harriedegroot/zzp-paradox/releases/download/v1.0/brief/decision-memo-v1.0.pdf  
-Policy brief: https://github.com/harriedegroot/zzp-paradox/releases/download/v1.0/brief/policy-brief-v1.0.pdf  
+Canon PDF: https://harriedegroot.github.io/zzp-paradox/whitepaper/ZZP-rechtszekerheid-v1.0.pdf  
+Decision memo: https://harriedegroot.github.io/zzp-paradox/brief/decision-memo-v1.0.pdf  
+Policy brief: https://harriedegroot.github.io/zzp-paradox/brief/policy-brief-v1.0.pdf  
 
 ## Visuals
 folder: `/assets/`  
-Stadia: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/stadia.png  
-Voorblad: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/voorblad.png  
-Pilaar: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/pilaren_metafoor.png  
-Strip: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/strip.png  
-Grafiek: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/chart.png  
-Weegschaal: https://github.com/harriedegroot/zzp-paradox/blob/main/assets/weegschaal.png  
+Stadia: https://harriedegroot.github.io/zzp-paradox/assets/stadia.png  
+Cover: https://harriedegroot.github.io/zzp-paradox/assets/cover.png  
+Pilaar: https://harriedegroot.github.io/zzp-paradox/assets/pilaren_metafoor.png  
+Strip: https://harriedegroot.github.io/zzp-paradox/assets/strip.png  
+Grafiek: https://harriedegroot.github.io/zzp-paradox/assets/chart.png  
+Weegschaal: https://harriedegroot.github.io/zzp-paradox/assets/weegschaal.png  
 
 ## Audit & Feedback
 Feedback: https://github.com/harriedegroot/zzp-paradox/issues/new?template=audit.yml  
-Checksums: https://github.com/harriedegroot/zzp-paradox/releases/download/v1.0/CHECKSUMS.txt
+Checksums: https://harriedegroot.github.io/zzp-paradox/CHECKSUMS.txt
