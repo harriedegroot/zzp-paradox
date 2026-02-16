@@ -1,6 +1,6 @@
 # Veelgestelde Vragen (FAQ)
 
-Deze FAQ is een leeswijzer en brandmuur. De **canon** (de enige citeerbare waarheid) is de PDF in de GitHub Release. Alle overige documenten en hulpmiddelen zijn wegwijzers.
+Deze FAQ is een leeswijzer en brandmuur. De **canon** (de enige citeerbare waarheid) is de PDF. Alle overige documenten en hulpmiddelen zijn wegwijzers.
 
 **Stand van zaken:** 16 februari 2026
 

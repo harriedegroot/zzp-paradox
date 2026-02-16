@@ -1,6 +1,6 @@
 # FACTSHEET — zzp-paradox v1.0
 
-Dit factsheet is een **wegwijzer**, geen canon. Citeer en verifieer uitsluitend in de **canon-PDF** (GitHub Release) met **sectie (x.x.x) + quote**.
+Dit factsheet is een **wegwijzer**, geen canon. Citeer en verifieer uitsluitend in de **canon-PDF** met **sectie (x.x.x) + quote**.
 
 **Stand van zaken:** 16 februari 2026
 

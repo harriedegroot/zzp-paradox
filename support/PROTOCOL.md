@@ -3,7 +3,7 @@
 Dit protocol beschrijft hoe inhoudelijke toetsing en tegenspraak werkt voor **zzp-paradox v1.0**.
 
 ## 1) Canon en citeerregel
-- De **canon** is de **PDF in de GitHub Release**.
+- De **canon** is de **PDF in de GitHub Repository**.
 - Citeer uitsluitend met **sectie (x.x.x)** en een **korte quote** uit de canon-PDF.
 - NotebookLM/LLM-output is **geen bron** zonder sectie + quote uit de canon-PDF.
 

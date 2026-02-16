@@ -36,7 +36,7 @@ Let op: reacties zonder bronanker worden niet inhoudelijk behandeld.
 
 ## 5) Canon en citatie in één regel
 
-Citeer en verifieer uitsluitend in de canon-PDF (GitHub Release) met sectie (x.x.x) en quote. NotebookLM en andere samenvattingen zijn navigatiehulpen en niet citeerbaar.
+Citeer en verifieer uitsluitend in de canon-PDF met sectie (x.x.x) en quote. NotebookLM en andere samenvattingen zijn navigatiehulpen en niet citeerbaar.
 
 ## 6) Scope in één alinea
 

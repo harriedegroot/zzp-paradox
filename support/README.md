@@ -16,7 +16,7 @@ Dit is ondersteunende documentatie voor de systeemdiagnose **zzp-paradox v1.0**.
 
 ## ⚖️ Canonieke regel
 
-1. **Canon-PDF is leidend:** alles in `support/` is wegwijzer; leidend is uitsluitend de PDF in de GitHub Release.
+1. **Canon-PDF is leidend:** alles in `support/` is wegwijzer; leidend is uitsluitend de PDF in de GitHub Repository.
 2. **Citatie-eis:** citeer uitsluitend met **sectie (x.x.x)** en een **exacte quote** uit de canon-PDF.
 3. **AI-beperking:** output van NotebookLM of andere LLM’s is nooit canoniek en dient alleen als navigatiehulp.
 
