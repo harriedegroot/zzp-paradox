@@ -1,5 +1,5 @@
 name: "Inhoudelijke Toetsing & Audit"
-description: "Gebruik dit formulier voor errata, counterarguments of vragen (bronanker verplicht)."
+description: "Gebruik dit formulier voor errata, tegenvoorbeelden of vragen (bronanker verplicht)."
 title: "[AUDIT]: "
 labels: ["audit"]
 body:

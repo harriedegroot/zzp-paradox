@@ -6,7 +6,7 @@ Dit is ondersteunende documentatie voor de systeemdiagnose **zzp-paradox v1.0**.
 
 | Document | Focus | Voor wie |
 | --- | --- | --- |
-| **[FACTSHEET](./FACTSHEET.md)** | Wegwijzer: kernmechanisme, ZZP-Paradox en toetsvragen. | Pers en snelle lezers |
+| **[FACTSHEET](./FACTSHEET.md)** | Wegwijzer: kernmechanisme, ZZP-paradox en toetsvragen. | Pers en snelle lezers |
 | **[PROTOCOL](./PROTOCOL.md)** | Audit-gids: regels voor toetsing en het verplichte bronanker. | Reviewers en auditors |
 | **[NOTES](./NOTES.md)** | Context: onafhankelijkheid, AI-verantwoording, misquote-kit. | Kritische lezers en media |
 | **[FAQ](./FAQ.md)** | Leeswijzer en begripsafbakening. | Iedereen |
@@ -31,5 +31,5 @@ Voor inhoudelijke toetsing of een tegenargument:
 
 ---
 
-**Status:** 14 februari 2026  
+**Status:** 16 februari 2026  
 **Integriteit:** verifieer bestanden via **[`CHECKSUMS.txt`](../CHECKSUMS.txt)**.

@@ -2,12 +2,12 @@
 
 Dit factsheet is een **wegwijzer**, geen canon. Citeer en verifieer uitsluitend in de **canon-PDF** (GitHub Release) met **sectie (x.x.x) + quote**.
 
-**Stand van zaken:** 14 februari 2026
+**Stand van zaken:** 16 februari 2026
 
 ## 1) Wat is dit in één zin?
 Een systeemdiagnose die laat zien waarom rechtszekerheid vooraf bij schijnzelfstandigheid structureel onder druk staat in complexe organisatiecontexten.
 
-## 2) Kernmechanisme (ZZP-Paradox)
+## 2) Kernmechanisme (ZZP-paradox)
 De diagnose beschrijft een mechanisme waarbij dezelfde professionele inzet juridisch kan kantelen door **context-drift**: groei en professionalisering van de opdrachtgever veranderen governance, security en compliance, waardoor de omgeving waarin het resultaat landt zwaarder wordt.
 
 ## 3) Waar gaat het mis in de praktijk?
@@ -27,7 +27,7 @@ Onzekerheid vooraf stuurt opdrachtgevers richting risicomijding aan de poort:
 
 ## 7) Wat vraagt dit document van de lezer?
 - **Routing:** welke rol in uw organisatie kan dit instrument formeel toetsen?
-- **Falsificatie:** geef één schaalbaar, praktisch beslispunt vooraf dat in complexe organisaties (Stadium 4) voorspelbaar werkt, onderbouwd met sectie (x.x.x) + quote.
+- **Falsificatie:** geef één schaalbaar, praktisch beslispunt vooraf dat in complexe organisaties voorspelbaar werkt, onderbouwd met sectie (x.x.x) + quote.
 
 ## 8) Wat vraagt het document niet?
 - Geen beoordeling van individuele dossiers of contracten.
@@ -38,7 +38,7 @@ Onzekerheid vooraf stuurt opdrachtgevers richting risicomijding aan de poort:
 ## 9) Startpunten (leestrack)
 - **NotebookLM:** snel begrip en navigatie (niet canoniek).
 - **Policy Brief (1p):** kern in één pagina.
-- **Decision Memo (2p):** routeerbare samenvatting.
+- **Decision Memo (3p):** routeerbare samenvatting.
 - **Canon-PDF:** volledige onderbouwing en bronset (Evidence Map).
 
 ## 10) Integriteit

@@ -2,15 +2,15 @@
 
 Deze FAQ is een leeswijzer en brandmuur. De **canon** (de enige citeerbare waarheid) is de PDF in de GitHub Release. Alle overige documenten en hulpmiddelen zijn wegwijzers.
 
-**Stand van zaken:** 14 februari 2026
+**Stand van zaken:** 16 februari 2026
 
 ## 🔍 Inhoud & Diagnose
 
 ### Wat is dit?
 Een onafhankelijke systeemdiagnose door een Software Architect op een socio-technisch systeem (rechtstaat, maatschappij en economie). Het is een toetsbaar instrument bestaande uit de canonieke whitepaper, routeerbare memo’s en een auditbaar feedbackkanaal.
 
-### Wat is de ZZP-Paradox?
-De **ZZP-Paradox** is het mechanisme dat zichtbaar maakt dat dezelfde professionele inzet juridisch kan kantelen door verandering in de organisatiecontext van de opdrachtgever. Het gaat om **context-drift**: groei, professionalisering, governance, security en compliance veranderen de omgeving waarin het resultaat landt.
+### Wat is de ZZP-paradox?
+De **ZZP-paradox** is het mechanisme dat zichtbaar maakt dat dezelfde professionele inzet juridisch kan kantelen door verandering in de organisatiecontext van de opdrachtgever. Het gaat om **context-drift**: groei, professionalisering, governance, security en compliance veranderen de omgeving waarin het resultaat landt.
 
 ### Wat is de kernclaim?
 Dat binnen het huidige kwalificatiekader in complexe organisatiecontexten vaak geen schaalbaar, praktisch beslispunt **vooraf** beschikbaar is. Die onzekerheid vooraf stuurt poortgedrag (drempels, schakels, uitsluiting) en vergroot het risico dat de status achteraf anders wordt geduid, met maatschappelijke en economische kosten als gevolg.
@@ -39,12 +39,12 @@ Nee. Als je iets wilt toetsen, formuleer het op mechanisme-niveau en verwijs naa
 
 ### Waar begin ik als ik weinig tijd heb?
 - **Snel begrip (2–5 min):** start met **NotebookLM** als navigatiehulp om de kernbegrippen en de leessporen te verkennen.
-- **Routeerbaar (1–3 min):** lees daarna de **Policy Brief** (1p) of **Decision Memo** (2p) om het intern door te sturen.
+- **Routeerbaar (1–3 min):** lees daarna de **Policy Brief** (1p) of **Decision Memo** (3p) om het intern door te sturen.
 - **Verificatie / citatie:** gebruik uitsluitend de **canon-PDF** en verwijs met **sectie (x.x.x) + quote**.
 
 ### Wat is het verschil tussen Policy Brief, Decision Memo en Canon?
 - **Policy Brief (1p):** de kern in één pagina.
-- **Decision Memo (2p):** routeerbare samenvatting voor beslissers.
+- **Decision Memo (3p):** routeerbare samenvatting voor beslissers.
 - **Canon (PDF):** volledige onderbouwing en bronset (Evidence Map). Alleen dit document is citeerbaar.
 
 ### Wat is NotebookLM in deze release?

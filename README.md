@@ -1,22 +1,25 @@
-# Systeemdiagnose: Schijnzelfstandigheid & Rechtszekerheid
+# DE ARCHITECTUUR VAN RECHTSZEKERHEID IN DE KENNISECONOMIE
+### *Waarom de wet de status van zelfstandigen vooraf niet kan garanderen*
 
-Deze repository bevat een **onafhankelijke, systematische analyse** van de architecturale knelpunten in het Nederlandse zzp-stelsel. Het biedt professionals, opdrachtgevers en beleidsmakers een helder logisch kader om de dynamiek tussen organisatiegroei en rechtszekerheid (**de ZZP-Paradox**) te begrijpen en te toetsen.
+Deze repository bevat een **onafhankelijke, systematische analyse** van waarom het debat over schijnzelfstandigheid al decennia vastloopt. Het document toont aan waarom nieuwe wetgeving en beleidsmaatregelen binnen het bestaande kwalificatiekader telkens tegen dezelfde structurele grenzen aanlopen.
 
-**Auteur:** Harrie de Groot (MSc) | Software Architect & AI Specialist  
-**Status:** Versie 1.0 — Canonieke Publicatie  
-**Datum:** 14 februari 2026  
+De analyse laat zien hoe dezelfde professionele inzet juridisch anders kan worden beoordeeld wanneer context en tijd veranderen, buiten de invloed van de zelfstandige. Dat verklaart terugkerende effecten in de praktijk: risicomijding, extra schakels in de keten en marktuitsluiting.
+
+**Auteur:** Harrie de Groot • Software Architect • MSc AI  
+**Status:** Versie 1.0 — Onafhankelijke Systeemdiagnose  
+**Datum:** 16 februari 2026  
 
 ---
 
 ### 📑 Directe Toegang (PDF)
 
-Deze editie biedt de volledige systeemdiagnose. Het document bevat de integrale bewijslast achter de ZZP-Paradox en ontsluit de bronset via de **Evidence Map**.
+Deze editie biedt de volledige systeemdiagnose. Het document bevat de integrale bewijslast achter de ZZP-paradox en ontsluit de bronset via de **Evidence Map**.
 
 | Document | Focus | Leestijd |
 | --- | --- | --- |
-| ⚡ **[Policy Brief](brief/policy-brief-v1.0.pdf)** | De kern en de ZZP-Paradox | 60 sec |
+| ⚡ **[Policy Brief](brief/policy-brief-v1.0.pdf)** | De kern en de ZZP-paradox | 60 sec |
 | 📄 **[Decision Memo](brief/decision-memo-v1.0.pdf)** | Samenvatting voor beslissers | 3 min |
-| 📚 **[Canonieke PDF](whitepaper/ZZP-rechtszekerheid-v1.0.pdf)** | Volledige analyse incl. Evidence Map | 15+ min |
+| 📚 **[Canonieke PDF](whitepaper/zzp-paradox-v1.0.pdf)** | Volledige analyse incl. Evidence Map | 15+ min |
 
 ---
 
@@ -28,7 +31,7 @@ Voor een snelle verkenning van de materie kan gebruik worden gemaakt van de inte
 
 👉 **[Open de interactieve leeswijzer](https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9)**
 
-*Let op: NotebookLM dient als navigatiehulp. Citeer en verifieer altijd in de canon-PDF met sectie en quote.*
+*Let op: NotebookLM dient als navigatiehulp. Citeer en verifieer altijd in de canon-PDF.*
 
 ---
 
@@ -40,13 +43,13 @@ Voor een snelle verkenning van de materie kan gebruik worden gemaakt van de inte
 
 ---
 
-### 🔍 De ZZP-Paradox
+### 🔍 De ZZP-paradox
 
-Deze analyse verklaart waarom het debat over schijnzelfstandigheid al decennia vastloopt. Centraal staat de **ZZP-Paradox**: het verschijnsel waarbij een werkrelatie juridisch kan kantelen uitsluitend door de groei en professionalisering van de opdrachtgever (**context-drift**).
+Centraal staat dat een werkrelatie juridisch kan kantelen zonder dat de zelfstandige aantoonbaar anders gaat leveren, maar doordat de organisatiecontext van de opdrachtgever verandert. Het document noemt dit de **ZZP-paradox**.
 
-Door de zelfstandige inzet in de analyse constant te houden, wordt zichtbaar dat rechtszekerheid vooraf geen eigenschap is van het werk, maar van de omgeving waarin het resultaat landt. In complexe organisaties (Stadium 4) dwingen veiligheids- en procesregels tot een integratie die juridisch vaak ten onrechte als 'gezag' wordt uitgelegd.
+Door de professionele inzet in de analyse constant te houden, wordt zichtbaar waarom rechtszekerheid vooraf in complexe, kennisintensieve omgevingen structureel onder druk komt te staan. Verplichte processen, protocollen en tooling zijn daar vaak een uitvoeringsvoorwaarde om resultaat te leveren, maar kunnen vooraf worden geïnterpreteerd als ‘gezag’ of ‘inbedding’.
 
-![De ZZP-Paradox: De Bewegende Grens](assets/stadia.png)
+![De ZZP-paradox: De Bewegende Grens](assets/stadia.png)
 
 ### 🖼️ Zie voor de volledige toelichting: [Projectpagina](https://harriedegroot.github.io/zzp-paradox/).
   
@@ -56,8 +59,9 @@ Door de zelfstandige inzet in de analyse constant te houden, wordt zichtbaar dat
 
 Het model daagt het huidige stelsel uit met twee fundamentele toetsvragen:
 
-1. **Centrale Toetsvraag:** “Kunt u binnen de huidige regels vooraf het kantelpunt aanwijzen waarop dezelfde opdracht juridisch omslaat naar een dienstbetrekking, uitsluitend doordat de opdrachtgever groeit en strakker gaat organiseren, terwijl de zelfstandige professional aantoonbaar dezelfde inzet levert?”
-2. **Aanvullende Toetsvraag:** “Hoe kan hoogwaardige expertise in teamgebaseerde, security-gedreven omgevingen worden ingezet wanneer integratie in processen een uitvoeringsvoorwaarde is, zonder dat dit automatisch als 'gezag' wordt gelezen?”
+1. **Centrale Toetsvraag:** “Kan binnen de huidige regels vooraf het kantelpunt worden aangewezen waarop dezelfde opdracht juridisch omslaat naar een dienstbetrekking, uitsluitend doordat de opdrachtgever groeit en strakker gaat organiseren, terwijl de zelfstandige professional aantoonbaar dezelfde inzet levert?”
+   
+2. **Aanvullende Toetsvraag:** “Hoe kan een zelfstandige efficiënt leveren in dynamische, kennisintensieve omgevingen waar integratie in processen en tooling een uitvoeringsvoorwaarde is, zonder dat noodzakelijke afstemming daarbij als ‘gezag’ of ‘ondergeschiktheid’ wordt beoordeeld?”
 
 ---
 
@@ -65,9 +69,9 @@ Het model daagt het huidige stelsel uit met twee fundamentele toetsvragen:
 
 Voor vragen over systematiek, onafhankelijkheid of voor een inhoudelijke bijdrage aan de audit: raadpleeg de **[Support Hub](./support/README.md)**.
 
-* **Inhoudelijke Toetsing**: Reacties worden uitsluitend behandeld indien voorzien van een **bronanker** uit de canonieke PDF (sectie + quote).
-* **Feedback indienen**: [Gebruik dit formulier](https://github.com/harriedegroot/zzp-paradox/issues/new?template=audit.yml) (GitHub Issues) voor uw formele reactie.
-* **Scope**: Wij behandelen errata, vragen en counterarguments op mechanisme-niveau; wij beoordelen geen individuele dossiers of contracten.
+* **Inhoudelijke Toetsing**: reacties zijn uitsluitend auditbaar indien voorzien van een bronanker uit de canonieke PDF (sectie (x.x.x) + exacte quote).
+* **Feedback indienen**: [Gebruik dit formulier](https://github.com/harriedegroot/zzp-paradox/issues/new?template=audit.yml) (GitHub Issues) voor inhoudelijke feedback.
+* **Scope**: Geen beoordeling van individuele dossiers of contracten, maar behandeling van errata, vragen en mechanisme-tegenvoorbeelden.
 
 ---
 
@@ -80,7 +84,7 @@ Voor vragen over systematiek, onafhankelijkheid of voor een inhoudelijke bijdrag
 
 ### ⚖️ Licenties, Integriteit & Verificatie
 
-**Citeerregel:** Citeer uitsluitend de PDF met sectie (x.x.x) en quote.
+**Citeerregel:** citeer uitsluitend de canonieke PDF met sectie (x.x.x) en exacte quote (bronanker).
 
 Dit project hanteert een gesplitste licentiestructuur:  
 

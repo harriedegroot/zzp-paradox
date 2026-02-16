@@ -10,7 +10,7 @@ Dit protocol beschrijft hoe inhoudelijke toetsing en tegenspraak werkt voor **zz
 ## 2) Scope van toetsing
 Wel:
 - Errata: feitelijke of tekstuele fouten.
-- Counterarguments: tegenwerping op mechanisme-niveau.
+- tegenvoorbeelden: tegenwerping op mechanisme-niveau.
 - Vragen: verduidelijking over begrippen, scope of leesroute.
 - Misquote/misframing: onjuiste externe weergave.
 

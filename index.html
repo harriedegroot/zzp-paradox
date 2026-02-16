@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Systeemdiagnose: Schijnzelfstandigheid & Rechtszekerheid</title>
+    <title>De Architectuur van Rechtszekerheid in de Kenniseconomie</title>
 
     <!-- Primary SEO -->
     <meta
       name="description"
-      content="Onafhankelijke systeemdiagnose van schijnzelfstandigheid en rechtszekerheid vooraf. Laat zien waarom kwalificatie bij schaalvergroting structureel botst met holistische ex post toetsing."
+      content="Onafhankelijke systeemdiagnose van rechtszekerheid vooraf (ex ante) voor zelfstandigen in de kenniseconomie. Laat zien waarom kwalificatie kan kantelen door organisatiegroei en formalisering, terwijl de professionele inzet gelijk blijft."
     />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://harriedegroot.github.io/zzp-paradox/" />
@@ -18,32 +18,51 @@
     <meta property="og:locale" content="nl_NL" />
     <meta
       property="og:title"
-      content="Systeemdiagnose: Schijnzelfstandigheid & Rechtszekerheid (ZZP-Paradox v1.0)"
+      content="De Architectuur van Rechtszekerheid in de Kenniseconomie (ZZP-Paradox v1.0)"
     />
     <meta
       property="og:description"
-      content="Canonieke systeemdiagnose met Evidence Map. Toont waarom rechtszekerheid vooraf verdwijnt bij groei en professionalisering van organisaties."
+      content="Onafhankelijke systeemdiagnose met Evidence Map. Toont waarom rechtszekerheid vooraf onder druk komt te staan wanneer organisaties groeien en strakker organiseren."
     />
-    <meta property="og:url" content="https://harriedegroot.github.io/zzp-paradox/" />
-    <meta property="og:image" content="https://harriedegroot.github.io/zzp-paradox/assets/stadia.png" />
-    <meta property="og:image:alt" content="Systeemdiagnose ZZP-Paradox v1.0" />
+    <meta
+      property="og:url"
+      content="https://harriedegroot.github.io/zzp-paradox/"
+    />
+    <meta
+      property="og:image"
+      content="https://harriedegroot.github.io/zzp-paradox/assets/voorblad.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Voorblad: De Architectuur van Rechtszekerheid in de Kenniseconomie (ZZP-Paradox v1.0)"
+    />
 
     <!-- Twitter/X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Systeemdiagnose: ZZP-Paradox v1.0" />
+    <meta
+      name="twitter:title"
+      content="Architectuur van Rechtszekerheid (ZZP-Paradox v1.0)"
+    />
     <meta
       name="twitter:description"
-      content="Waarom rechtszekerheid vooraf structureel botst met holistische ex post toetsing in moderne organisaties."
+      content="Waarom rechtszekerheid vooraf (ex ante) voor zelfstandigen niet te garanderen is binnen het huidige kwalificatiekader, vooral bij organisatiegroei en formalisering."
     />
-    <meta name="twitter:image" content="https://harriedegroot.github.io/zzp-paradox/assets/stadia.png" />
+    <meta
+      name="twitter:image"
+      content="https://harriedegroot.github.io/zzp-paradox/assets/voorblad.png"
+    />
 
     <!-- Icons -->
-    <link rel="icon" href="https://harriedegroot.github.io/zzp-paradox/favicon.ico" sizes="any" />
-        
+    <link
+      rel="icon"
+      href="https://harriedegroot.github.io/zzp-paradox/favicon.ico"
+      sizes="any"
+    />
+
     <!-- Performance hints (optioneel, helpt bij externe links) -->
     <link rel="preconnect" href="https://notebooklm.google.com" />
     <link rel="preconnect" href="https://github.com" />
-    
+
     <style>
       :root {
         --deep-blue: #003366;
@@ -66,25 +85,47 @@
         background-color: #fff;
       }
 
-      /* --- Header --- */
+      /* --- Header: Clean & Authoritative (Doc Cover Style) --- */
       header {
-        border-bottom: 2px solid var(--deep-blue);
-        padding-bottom: 25px;
-        margin-bottom: 50px;
+        border-bottom: 4px solid var(--deep-blue); /* Iets dikker voor een fundamenteler gevoel */
+        padding-bottom: 45px;
+        margin-bottom: 60px;
       }
 
       h1 {
-        font-size: 2.8rem;
+        font-family: "Georgia", serif;
+        font-size: 3.7rem;
+        text-transform: uppercase;
+        line-height: 0.95; /* Extreem strak voor dat blok-effect */
+        letter-spacing: 0.03em;
         color: var(--deep-blue);
-        margin-bottom: 10px;
-        line-height: 1.1;
-        font-weight: normal;
+        margin-bottom: 25px;
+        font-weight: normal; /* Georgia is krachtig genoeg van zichzelf */
+        -webkit-font-smoothing: antialiased; /* Voor extra scherpte bij grote letters */
       }
+
+      .subtitle {
+        font-family: "Georgia", serif;
+        font-size: 1.8rem;
+        line-height: 1.3;
+        color: #37474f; /* Een diep, 'serious' blauw-grijs voor meer autoriteit */
+        font-style: italic;
+        margin-top: 0;
+        margin-bottom: 40px;
+        max-width: 85%; /* Dwingt een mooiere regelafbreking af */
+        display: block;
+      }
+
       .metadata {
         font-family: sans-serif;
-        font-size: 0.95rem;
+        font-size: 1rem;
         color: var(--meta-color);
-        line-height: 1.5;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+      }
+
+      .metadata strong {
+        color: var(--text-color);
       }
 
       /* --- Abstract --- */
@@ -444,11 +485,17 @@
   </head>
   <body>
     <header>
-      <h1>Systeemdiagnose: Schijnzelfstandigheid & Rechtszekerheid</h1>
+      <h1>De Architectuur van Rechtszekerheid in de Kenniseconomie</h1>
+
+      <span class="subtitle">
+        Waarom de wet de status van zelfstandigen vooraf niet kan garanderen
+      </span>
+
       <div class="metadata">
-        <strong>Harrie de Groot (MSc)</strong> &bull; Software Architect &amp;
-        AI specialist<br />
-        Versie 1.0 &bull; Canonieke Publicatie &bull; 14 februari 2026
+        <strong>Harrie de Groot</strong> &bull; Software Architect &bull; MSc
+        AI<br />
+        <strong>Versie 1.0</strong> &bull; Onafhankelijke Systeemdiagnose &bull;
+        16 februari 2026
       </div>
     </header>
 
@@ -471,12 +518,12 @@
         <h3>Canonieke Systeemdiagnose</h3>
         <p>
           Deze editie biedt de volledige systeemdiagnose. Het document bevat de
-          integrale bewijslast achter de ZZP-Paradox en ontsluit de bronset via
+          integrale bewijslast achter de ZZP-paradox en ontsluit de bronset via
           de Evidence Map.
         </p>
         <div class="btn-stack">
           <a
-            href="whitepaper/ZZP-rechtszekerheid-v1.0.pdf"
+            href="whitepaper/zzp-paradox-v1.0.pdf"
             target="_blank"
             class="btn btn-main"
             >Systeemdiagnose v1.0 (PDF)</a
@@ -492,7 +539,7 @@
               href="brief/decision-memo-v1.0.pdf"
               target="_blank"
               class="btn btn-sub"
-              >Decision Memo (2p)</a
+              >Decision Memo (3p)</a
             >
           </div>
         </div>
@@ -505,29 +552,48 @@
         Verken de materie via de interactieve AI omgeving:
       </p>
       <div class="tag-row">
-        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+        <a
+          href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9"
+          target="_blank"
+          class="tag"
           ><span>💬</span> Chat</a
         >
-        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+        <a
+          href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9"
+          target="_blank"
+          class="tag"
           ><span>🎙️</span> Audio Briefing</a
         >
-        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+        <a
+          href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9"
+          target="_blank"
+          class="tag"
           ><span>📊</span> Infographics</a
         >
-        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+        <a
+          href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9"
+          target="_blank"
+          class="tag"
           ><span>🎬</span> Video-uitleg</a
         >
-        <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="tag"
+        <a
+          href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9"
+          target="_blank"
+          class="tag"
           ><span>📄</span> Briefings</a
         >
       </div>
-      <a href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9" target="_blank" class="ai-cta-box">
+      <a
+        href="https://notebooklm.google.com/notebook/0701dfb0-2615-42ec-b946-b7d0c3ce0ba9"
+        target="_blank"
+        class="ai-cta-box"
+      >
         <div class="icon-arrow">➔</div>
         <span>Open de interactieve leeswijzer</span>
       </a>
       <p class="ai-disclaimer">
-        NotebookLM is een publieke navigatiehulp; citeer en verifieer altijd in
-        de canon-PDF met sectie en quote.
+        NotebookLM is een publieke navigatiehulp. Citeer en verifieer altijd in
+        de canon-PDF.
       </p>
     </section>
 
@@ -538,25 +604,25 @@
       beleidsaanbeveling of politiek pamflet.
     </div>
 
-    <h2>De ZZP-Paradox</h2>
+    <h2>De ZZP-paradox</h2>
     <p>
       Het centrale mechanisme van deze diagnose legt bloot dat een werkrelatie
       juridisch kan kantelen uitsluitend door de groei en professionalisering
-      van de opdrachtgever.
+      van de opdrachtgever, terwijl de zelfstandige aantoonbaar dezelfde
+      professionele inzet levert.
     </p>
     <p>
-      Door de zelfstandige inzet in de analyse constant te houden, wordt
-      zichtbaar dat de juridische kwalificatie meeschuift met de
-      organisatiecontext. Rechtszekerheid vooraf is hiermee in de praktijk geen
-      eigenschap van het werk, maar van de omgeving waarin het resultaat landt.
-      De visualisatie maakt zichtbaar dat er geen vooraf kenbare drempel bestaat
-      waar zelfstandigheid omslaat naar een herkwalificatie als
-      dienstbetrekking.
+      Door de professionele inzet van de zelfstandige in de analyse constant te
+      houden, wordt zichtbaar dat de juridische kwalificatie kan meeschuiven met
+      de organisatiecontext waarin het resultaat landt. De visualisatie maakt
+      zichtbaar dat er geen vooraf kenbare drempel bestaat waar zelfstandigheid
+      omslaat naar een herkwalificatie als dienstbetrekking. De grens wordt in
+      de praktijk pas scherp bij beoordeling achteraf (ex post).
     </p>
     <div class="visual-box">
       <img
         src="assets/stadia.png"
-        alt="De ZZP-Paradox Stadia"
+        alt="De ZZP-paradox Stadia"
         class="zoomable"
       />
     </div>
@@ -589,17 +655,26 @@
     <h2>Maatschappelijke Consequentie</h2>
     <p>
       Gebrek aan rechtszekerheid vooraf stuurt opdrachtgevers richting
-      risicomijdend gedrag aan de poort. Dat vertaalt zich in extra drempels,
-      verplichte schakels of uitsluiting, en verstoort zo structureel de werking
-      van de arbeidsmarkt en kenniseconomie. Het resultaat is een
-      maatschappelijk waardelek in de orde van grootte van honderden miljoenen
-      tot ruim €1 miljard per jaar.
+      risicomijdend gedrag. Dit uit zich in uitsluiting (&quot;<i
+        >niet geschikt voor ZZP</i
+      >&quot;), ketenbuffering en gedwongen intermediatie als dominante route.
+      Het gevolg is structurele systeemfrictie die de effectieve inzet van
+      expertise belemmert en een maatschappelijk waardelek veroorzaakt dat
+      verder reikt dan directe kostenopslag.
+    </p>
+    <p>
+      De analyse identificeert een substantieel maatschappelijk waardelek als
+      gevolg van systeemfrictie. Door een ‘compliance-taks’ vloeien middelen
+      voorspelbaar weg naar risicobuffering, routing en procesoverhead, wat de
+      inzet en overdracht van schaarse expertise belemmert. Dit vormt een
+      structurele rem op de wendbaarheid, de economische slagkracht en het
+      innovatie- en verdienvermogen van de kenniseconomie.
     </p>
 
     <div class="conclusion-box">
       <span class="box-label">Synthese: De Mobiliteitsparadox</span>
       <span class="main-conclusion"
-        >“Zolang we holistisch en ex post blijven toetsen, blijft de ZZP-Paradox
+        >“Zolang we holistisch en ex post blijven toetsen, blijft de ZZP-paradox
         een maatschappelijk probleem.”</span
       >
 
@@ -640,38 +715,43 @@
       <span class="box-label">Conclusie & Toetsing</span>
       <div class="audit-item">
         <span class="audit-label">Centrale Toetsvraag:</span>
-        “Kunt u binnen de huidige regels vooraf het kantelpunt aanwijzen waarop
-        dezelfde opdracht juridisch omslaat naar een dienstbetrekking,
+        “Kan binnen de huidige regels vooraf het kantelpunt worden aangewezen
+        waarop dezelfde opdracht juridisch omslaat naar een dienstbetrekking,
         uitsluitend doordat de opdrachtgever groeit en strakker gaat
         organiseren, terwijl de zelfstandige professional aantoonbaar dezelfde
         inzet levert?”
       </div>
       <div class="audit-item">
         <span class="audit-label">Aanvullende Toetsvraag:</span>
-        “Hoe kan hoogwaardige expertise in teamgebaseerde, security-gedreven
-        omgevingen worden ingezet wanneer integratie in processen een
-        uitvoeringsvoorwaarde is, zonder dat dit automatisch als 'gezag' wordt
-        gelezen?”
+        “Hoe kan een zelfstandige efficiënt leveren in dynamische,
+        kennisintensieve omgevingen waar integratie in processen en tooling een
+        uitvoeringsvoorwaarde is, zonder dat noodzakelijke afstemming daarbij
+        als ‘gezag’ of ‘ondergeschiktheid’ wordt beoordeeld?”
       </div>
     </div>
 
     <div class="falsification-box">
-      <h4>Review & Falsificatie</h4>
+      <h4>Review & Feedback</h4>
       <p>
-        Dit document is opgesteld als een toetsbaar model. Wilt u de kernclaim
-        weerleggen? Geef één schaalbaar, praktisch beslispunt vooraf dat in
-        complexe organisaties (Stadium 4) voorspelbaar werkt. Verwijs naar de
-        passage in de brontekst via dit
-        <a href="https://github.com/harriedegroot/zzp-paradox/issues/new?template=audit.yml">formulier</a>.
+        Deze publicatie is opgezet als toetsbare systeemdiagnose. Inhoudelijke
+        correcties, tegenvoorbeelden en aanvullingen zijn welkom, mits
+        auditbaar: verwijs naar een passage in de canonieke PDF (sectie + exacte
+        quote) of geef een toetsbaar mechanisme-tegenvoorbeeld dat aangeeft
+        welke stap in de redenering niet opgaat. Indienen kan via het
+        <a
+          href="https://github.com/harriedegroot/zzp-paradox/issues/new?template=audit.yml"
+          >audit-formulier</a
+        >.
       </p>
     </div>
 
     <footer>
       <div class="footer-content">
         <div class="footer-links">
-          v1.0 (Canonieke Publicatie) &bull; 14 februari 2026<br />
+          v1.0 &bull; Onafhankelijke Systeemdiagnose &bull; 16 februari 2026<br />
           Bronelementen beschikbaar via de
-          <a href="https://github.com/harriedegroot/zzp-paradox">GitHub Repository</a
+          <a href="https://github.com/harriedegroot/zzp-paradox"
+            >GitHub Repository</a
           >.
         </div>
         <div style="text-align: right">&copy; 2026 Harrie de Groot</div>
