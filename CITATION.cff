@@ -3,7 +3,7 @@ type: report
 message: "Indien u deze systeemdiagnose citeert, gebruik dan onderstaande metadata. Citeer inhoudelijk uitsluitend de canonieke PDF met sectie (x.x.x) en quote. Let op: de repository is split-licensed; dit licentieveld verwijst naar de canon-PDF."
 title: "Systeemdiagnose: Schijnzelfstandigheid & Rechtszekerheid"
 version: "1.0"
-date-released: "2026-02-14"
+date-released: "2026-02-16"
 authors:
   - family-names: "de Groot"
     given-names: "Harrie"
