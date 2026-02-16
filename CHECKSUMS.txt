@@ -1,3 +1,3 @@
-7fc3ec6922b74240a036b57e7ed55c2502ec8d2f278608715fab15abdd098631  brief/decision-memo-v1.0.pdf
-99ec56f0bd7981d146d0651b9b07585e92ff68e1b6f5c3031f0614beda51ca28  brief/policy-brief-v1.0.pdf
-494681a85933829a017a0a8b169565c48ad926dd3f50186e8617db6248effb7c  whitepaper/zzp-paradox-v1.0.pdf
+028846d9ce355382f099ad24fd45fef7775a53c0d6bd6fa01bb49e1ba5ce4d3e  brief/decision-memo-v1.0.pdf
+d3375190e2441d348e2e65a5e27ce34b9e3cfa69ad1f09fe00731c12c949a98e  brief/policy-brief-v1.0.pdf
+e850fe3415cf7eae25a0b61193992b1647cd5f711374774041bb0cfc9e1f4934  whitepaper/zzp-paradox-v1.0.pdf
