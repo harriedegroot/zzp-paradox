@@ -87,7 +87,7 @@
 
       /* --- Header: Clean & Authoritative (Doc Cover Style) --- */
       header {
-        border-bottom: 4px solid var(--deep-blue); /* Iets dikker voor een fundamenteler gevoel */
+        border-bottom: 4px solid var(--deep-blue);
         padding-bottom: 45px;
         margin-bottom: 60px;
       }
@@ -96,23 +96,23 @@
         font-family: "Georgia", serif;
         font-size: 3.7rem;
         text-transform: uppercase;
-        line-height: 0.95; /* Extreem strak voor dat blok-effect */
+        line-height: 0.95;
         letter-spacing: 0.03em;
         color: var(--deep-blue);
         margin-bottom: 25px;
-        font-weight: normal; /* Georgia is krachtig genoeg van zichzelf */
-        -webkit-font-smoothing: antialiased; /* Voor extra scherpte bij grote letters */
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
       }
 
       .subtitle {
         font-family: "Georgia", serif;
         font-size: 1.8rem;
         line-height: 1.3;
-        color: #37474f; /* Een diep, 'serious' blauw-grijs voor meer autoriteit */
+        color: #37474f;
         font-style: italic;
         margin-top: 0;
         margin-bottom: 40px;
-        max-width: 85%; /* Dwingt een mooiere regelafbreking af */
+        max-width: 85%;
         display: block;
       }
 
@@ -481,6 +481,38 @@
           flex-direction: column;
         }
       }
+
+      /* --- Audio Briefing Sectie --- */
+      .audio-briefing-container {
+        border: 1px solid var(--border-color);
+        padding: 25px;
+        margin: 30px 0;
+        background-color: #fff;
+      }
+
+      .audio-label {
+        display: block;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 15px;
+        color: var(--deep-blue);
+      }
+
+      audio {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .ai-warning {
+        font-family: sans-serif;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        color: #555;
+        font-style: italic;
+      }
     </style>
   </head>
   <body>
@@ -603,6 +635,22 @@
       toetsen. Het is nadrukkelijk geen juridisch advies, geen
       beleidsaanbeveling of politiek pamflet.
     </div>
+
+    <section class="audio-briefing-container">
+      <span class="audio-label">🎙️ Audio Briefing</span>
+
+      <audio controls>
+        <source src="assets/audio-briefing.m4a" type="audio/mp4" />
+        Je browser ondersteunt dit audioformaat niet.
+      </audio>
+
+      <div class="ai-warning">
+        Deze audio is door AI gegenereerd. De opname kan nuances missen of zaken
+        onjuist interpreteren. Gebruik het uitsluitend voor snel begrip. De
+        <strong>canon-PDF is de enige canonieke bron</strong> en te allen
+        tijde leidend.
+      </div>
+    </section>
 
     <h2>De ZZP-paradox</h2>
     <p>
