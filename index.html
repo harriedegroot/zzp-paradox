@@ -514,6 +514,170 @@
         font-style: italic;
       }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJCFJMKQ17"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZJCFJMKQ17');
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Link click tracking
+        document.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            // PDF click
+            if (link.href.match(/\.pdf$/i)) {
+              gtag('event', 'pdf_click', {
+                'event_category': 'PDF',
+                'event_label': link.href
+              });
+            }
+            // Interactieve Leeswijzer (NotebookLM)
+            if (link.classList.contains('ai-cta-box')) {
+              gtag('event', 'leeswijzer_click', {
+                'event_category': 'Leeswijzer',
+                'event_label': link.href
+              });
+            }
+            // GitHub Repository
+            if (link.href.includes('github.com/harriedegroot/zzp-paradox')) {
+              gtag('event', 'repo_click', {
+                'event_category': 'Repository',
+                'event_label': link.href
+              });
+            }
+            // Outbound link
+            if (link.href && !link.href.includes(window.location.hostname)) {
+              gtag('event', 'outbound_link', {
+                'event_category': 'Outbound',
+                'event_label': link.href
+              });
+            }
+            // Generic link click
+            if (!link.href.match(/\.pdf$/i)) {
+              gtag('event', 'link_click', {
+                'event_category': 'Link',
+                'event_label': link.href
+              });
+            }
+          });
+        });
+
+        // Button click tracking
+        document.querySelectorAll('.btn-main, .btn-sub').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            gtag('event', 'button_click', {
+              'event_category': 'Button',
+              'event_label': btn.textContent.trim()
+            });
+          });
+        });
+
+        // Image zoom tracking (all .zoomable images)
+        document.querySelectorAll('.zoomable').forEach(function(img) {
+          img.addEventListener('click', function() {
+            gtag('event', 'image_zoom', {
+              'event_category': 'Image',
+              'event_label': img.alt || img.src
+            });
+          });
+        });
+
+        // Section view tracking
+        var sections = [
+          {selector: '.pub-section', event: 'pub_section_view', label: 'pub-section'},
+          {selector: '.ai-nav-section', event: 'ai_nav_view', label: 'ai-nav-section'},
+          {selector: '.conclusion-box', event: 'conclusion_view', label: 'conclusion-box'},
+          {selector: '.audit-box', event: 'audit_view', label: 'audit-box'},
+          {selector: '.falsification-box', event: 'falsification_view', label: 'falsification-box'}
+        ];
+        var sectionViewed = {};
+        window.addEventListener('scroll', function() {
+          sections.forEach(function(sec) {
+            var el = document.querySelector(sec.selector);
+            if (el && !sectionViewed[sec.event]) {
+              var rect = el.getBoundingClientRect();
+              if (rect.top < window.innerHeight && rect.bottom > 0) {
+                gtag('event', sec.event, {
+                  'event_category': 'Section',
+                  'event_label': sec.label
+                });
+                sectionViewed[sec.event] = true;
+              }
+            }
+          });
+        });
+
+        // Scroll depth tracking
+        var scrollDepths = [25, 50, 75, 100];
+        var scrollDepthReached = {};
+        window.addEventListener('scroll', function() {
+          var docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+          var winHeight = window.innerHeight;
+          var scrollTop = window.scrollY || window.pageYOffset;
+          var percent = Math.round(((scrollTop + winHeight) / docHeight) * 100);
+          scrollDepths.forEach(function(depth) {
+            if (percent >= depth && !scrollDepthReached[depth]) {
+              gtag('event', 'scroll_depth', {
+                'event_category': 'Scroll',
+                'event_label': depth + '%'
+              });
+              scrollDepthReached[depth] = true;
+            }
+          });
+        });
+
+        // Track strip image view (already covered by .zoomable)
+      });
+
+      // Audio briefing tracking
+      var audio = document.querySelector('audio');
+      if (audio) {
+        var audioStarted = false;
+        var audioPaused = false;
+        var audioStartTime = 0;
+        var audioListenTime = 0;
+
+        audio.addEventListener('play', function() {
+          if (!audioStarted) {
+            gtag('event', 'audio_play', {
+              'event_category': 'Audio',
+              'event_label': audio.src
+            });
+            audioStarted = true;
+            audioStartTime = Date.now();
+          } else if (audioPaused) {
+            audioStartTime = Date.now();
+            audioPaused = false;
+          }
+        });
+
+        audio.addEventListener('pause', function() {
+          if (!audioPaused && audioStarted) {
+            var now = Date.now();
+            audioListenTime += (now - audioStartTime) / 1000;
+            gtag('event', 'audio_pause', {
+              'event_category': 'Audio',
+              'event_label': audio.src,
+              'listen_seconds': Math.round(audioListenTime)
+            });
+            audioPaused = true;
+          }
+        });
+
+        audio.addEventListener('ended', function() {
+          var now = Date.now();
+          audioListenTime += (now - audioStartTime) / 1000;
+          gtag('event', 'audio_end', {
+            'event_category': 'Audio',
+            'event_label': audio.src,
+            'listen_seconds': Math.round(audioListenTime)
+          });
+        });
+      }
+    </script>
   </head>
   <body>
     <header>
